@@ -1,7 +1,7 @@
 # CubeSat Team
-![GitHub repo size](https://img.shields.io/github/repo-size/otaviozordan/ARduck?style=for-the-badge)
-![GitHub commits](https://img.shields.io/github/commit-activity/y/otaviozordan/ARduck?style=for-the-badge)
-![GitHub Contributors](https://img.shields.io/github/contributors/otaviozordan/ARduck?color=green&style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/DreamkitteXz/OBSAT-2023?style=for-the-badge)
+![GitHub commits](https://img.shields.io/github/commit-activity/y/DreamkitteXz/OBSAT-2023?style=for-the-badge)
+![GitHub Contributors](https://img.shields.io/github/contributors/DreamkitteXz/OBSAT-2023?color=green&style=for-the-badge)
 
 > Status do projeto: Em desenvolvimento
 
