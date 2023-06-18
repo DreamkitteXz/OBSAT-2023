@@ -13,5 +13,5 @@ Este repositório é dedicado ao desenvolvimento do CubeSat para a [OBSAT](https
 
 ## Desenvolvedores do projeto
 
-| [<img src="https://avatars.githubusercontent.com/u/93887857?s=400&u=4569dd01d20e22127e5e8d8c68bc4229f464ca80&v=4" width=115><br><sub>Kayque Amado</sub>](https://github.com/DreamkitteXz) || :---: || [<img src="https://avatars.githubusercontent.com/u/90804464?v=4" width=115><br><sub>Otávio Zordan</sub>](https://github.com/otaviozordan) |
+| [<img src="https://avatars.githubusercontent.com/u/93887857?s=400&u=4569dd01d20e22127e5e8d8c68bc4229f464ca80&v=4" width=115><br><sub>Kayque Amado</sub>](https://github.com/DreamkitteXz) || [<img src="https://avatars.githubusercontent.com/u/90804464?v=4" width=115><br><sub>Otávio Zordan</sub>](https://github.com/otaviozordan) |
 | :---: |
