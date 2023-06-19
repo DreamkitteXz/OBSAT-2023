@@ -1,13 +1,13 @@
 # CubeSat Team
 > Status do projeto: Em desenvolvimento
 
-Esta repositório é dedicado ao desenvolvimento do CubeSat para a [OBSAT](https://www.obsat.org.br) (Olimpíada Brasileira de Satélites MCTI) de 2023. O objetivo deste projeto é criar um satélite compacto e funcional que atenda aos requisitos e padrões estabelecidos pela [OBSAT](https://www.obsat.org.br), permitindo a realização da nossa pesquisa de ...
+Esta Branch é dedicada ao desenvolvimento do Firmware do CubeSat para a [OBSAT](https://www.obsat.org.br) (Olimpíada Brasileira de Satélites MCTI) de 2023. Para o sistema embarcado ao CubeSat estamos utilizando o MCU ESP32 juntamente com o ambiente de desenvolvimento ESP-IDF(Espressif IoT Development Framework) criado e indicado pela Espressif, Desenvolvedora do ESP32. O objetivo desta Branch é alocar o código dO CubeSat.
 
-## <center>Funcionalidades do projeto</center>
+## <center>Propriedades do desenvolvimento</center>
 
-- `Funcionalidade 1`: ainda em desenvolvimento
+- `Propriedade 1`: Utilizando o FreeRTOS embarcado no ESP32, consumindo todos os recursos e funcionalidades disponibilizados por ele como Mutexes, Filas, Semáforos Binários e EventGroups para ter um sistema profissional, funcional e organizado.
 
-## Desenvolvedores do projeto
+## Desenvolvedor do Firmware
 
 | [<img src="https://avatars.githubusercontent.com/u/93887857?s=400&u=4569dd01d20e22127e5e8d8c68bc4229f464ca80&v=4" width=115><br><sub>Kayque Amado</sub>](https://github.com/DreamkitteXz) |
 | :---: |
