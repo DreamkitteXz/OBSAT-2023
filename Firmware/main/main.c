@@ -1,3 +1,13 @@
+/*
+*  Fazendo uns estudos em FreeRTOS na ESP-IDF
+*  Project: OBSAT-2023
+*  Autor: Kayque Amado
+*  Data: 20 de Junho de 2023
+*/
+
+//=======================================================
+// --- Bibliotecas ---
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -10,7 +20,7 @@ float temperatura;
 SemaphoreHandle_t mutexI2C;
 
 // =======================================================
-// SIMULANDO AS TASKS
+// --- SIMULANDO AS TASKS ---
 
 void task1(void * params) // Task de Leitura dos sensores
 {
@@ -30,7 +40,7 @@ void task2(void * params) // Task de Escrever no Display
 }
 
 // =======================================================
-// SIMULANDO O MUTEXI2C
+// --- SIMULANDO O MUTEXI2C ---
 
 float acessa_i2c(int comando) // Função de acesso ao I2C
 {
@@ -84,6 +94,7 @@ void lcd_display(void * params) //TASK de escrever Temperatura no LCD
 }
 
 // =============================================================
+// --- Função Principal ---
 
 void app_main(void)
 {
