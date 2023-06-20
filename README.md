@@ -1,8 +1,10 @@
 # CubeSat Team
 
-![GitHub repo size](https://img.shields.io/github/repo-size/DreamkitteXz/OBSAT-2023?style=for-the-badge)
-![GitHub commits](https://img.shields.io/github/commit-activity/y/DreamkitteXz/OBSAT-2023?style=for-the-badge)
-![GitHub Contributors](https://img.shields.io/github/contributors/DreamkitteXz/OBSAT-2023?color=green&style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/DreamkitteXz/OBSAT-2023)
+![GitHub commit activity (Firmware)](https://img.shields.io/github/commit-activity/t/DreamkitteXz/OBSAT-2023)
+![GitHub last commit (Firmware)](https://img.shields.io/github/last-commit/DreamkitteXz/OBSAT-2023/Firmware)
+
+
 
 > Status do projeto: Em desenvolvimento
 
