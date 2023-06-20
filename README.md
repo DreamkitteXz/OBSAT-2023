@@ -12,7 +12,7 @@ Esta Branch é dedicada ao desenvolvimento do Firmware do CubeSat para a ***[OBS
 
 ## <center>Propriedades do Desenvolvimento</center>
 
-- **`Propriedade 1`:** Utilizando o ***[FreeRTOS](https://www.freertos.org)*** embarcado no ***ESP32***, consumindo todos os recursos e funcionalidades disponibilizados por ele como ***Mutexes***, ***Filas***, ***Semáforos Binários*** e ***EventGroups*** para ter um sistema profissional, funcional e organizado.
+- **`Propriedade 1:`** Estamos utilizando o ***[FreeRTOS](https://www.freertos.org)*** embarcado no ***ESP32***, consumindo todos os recursos e funcionalidades disponibilizados por ele como ***Mutexes***, ***Filas***, ***Semáforos Binários*** e ***EventGroups*** para ter um sistema profissional, funcional e organizado.
 
 ## Desenvolvedor do Firmware
 
