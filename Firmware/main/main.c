@@ -3,12 +3,13 @@
 #include <stdlib.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "esp_log.h"
 
 void task1(void * params) // Task de Leitura dos sensores
 {
    while (1) 
    {
-      printf("Leitura de Sensores\n"); 
+      ESP_LOGI("TASK1", "Leitura de Sensores\n");
       vTaskDelay(1000 / portTICK_PERIOD_MS);
    }
 }
@@ -16,7 +17,7 @@ void task2(void * params) // Task de Escrever no Display
 {
    while (1)
    {
-      printf("Escrever no display");
+      ESP_LOGI("TASK2", "Escrever no display\n");
       vTaskDelay(5000 / portTICK_PERIOD_MS);
    }
 }
