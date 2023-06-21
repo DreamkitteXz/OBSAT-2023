@@ -19,6 +19,8 @@
 
 float temperatura_media;
 
+//=======================================================
+
 void leitura_de_sensores()
 {
    float temperatura;
@@ -28,6 +30,9 @@ void leitura_de_sensores()
    }
    
 }
+
+// =============================================================
+// --- Função Principal ---
 
 void app_main(void)
 {
