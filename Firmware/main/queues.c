@@ -6,6 +6,8 @@
 *  Data: 20 de Junho de 2023
 */
 
+//Não esta Funcionando :(
+   
 //=======================================================
 // --- Bibliotecas ---
 
@@ -39,8 +41,6 @@ void leitura_de_sensores(void * params) //TASK de leitura do sensor de temperatu
       {
          ESP_LOGE("Leitura","Falha no envio da temperatura");
       }
-      
-      
       vTaskDelay(1000 / portTICK_PERIOD_MS);
    }
 }
