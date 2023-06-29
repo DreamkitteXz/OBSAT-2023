@@ -15,6 +15,7 @@
         "idf.pythonBinPathWin": "C:\\Espressif\\python_env\\idf5.0_py3.8_env\\Scripts\\python.exe",
         "idf.toolsPathWin": "C:\\Espressif",
         "files.associations": {
-                "stdlib.h": "c"
+                "stdlib.h": "c",
+                "esp_log.h": "c"
         }
 }
