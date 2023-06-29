@@ -1,5 +1,5 @@
 /*
-*  Código da medição da Corrente gerada pela placa
+*  Código da medição da Corrente gerada pela placa (PAYLOAD)
 *  Tópico: Sensor de Corrente
 *  Project: OBSAT-2023
 *  Autor: Kayque Amado
