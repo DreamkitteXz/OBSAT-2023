@@ -1,0 +1,9 @@
+CMake Error at C:/Espressif/frameworks/esp-idf-v5.0.1/tools/cmake/project.cmake:243 (message):
+  Directory specified in EXTRA_COMPONENT_DIRS doesn't exist:
+  C:/Users/kayqu/OBSAT-2023/Firmwarecomponents/mpu6050/include
+Call Stack (most recent call first):
+  C:/Espressif/frameworks/esp-idf-v5.0.1/tools/cmake/project.cmake:327 (__project_init)
+  CMakeLists.txt:11 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed
