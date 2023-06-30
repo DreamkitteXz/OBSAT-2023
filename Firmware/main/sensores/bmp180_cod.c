@@ -77,11 +77,11 @@ void bmp180_test(void *pvParameters)
              */
             printf("Temperature: %.2f degrees Celsius; Pressure: %" PRIu32 " Pa\n", temp, pressure);
 
-        vTaskDelay(pdMS_TO_TICKS(500));
+        vTaskDelay(pdMS_TO_TICKS(5000));
     }
 }
 
-void app_main()
+void bmp180_task_start(void)
 {
     ESP_ERROR_CHECK(i2cdev_init());
     xTaskCreatePinnedToCore(bmp180_test, "bmp180_test", configMINIMAL_STACK_SIZE * 15, NULL, 5, NULL, APP_CPU_NUM);

@@ -22,8 +22,8 @@
 // --- MAPEAMENTO DO HARDWARE ---
 
 #define BOTAO_PCNT 34
-#define LED_1 27
-#define PIN_3V3 32
+//#define LED_1 27
+//#define PIN_3V3 32
 
 //=======================================================
 // --- Função Principal ---
@@ -32,26 +32,26 @@ void app_main(void)
 {
    //Configuração dos pinos
    esp_rom_gpio_pad_select_gpio(BOTAO_PCNT);
-   esp_rom_gpio_pad_select_gpio(PIN_3V3);
-   esp_rom_gpio_pad_select_gpio(LED_1);
+   //esp_rom_gpio_pad_select_gpio(PIN_3V3);
+   //esp_rom_gpio_pad_select_gpio(LED_1);
 
    // Configura Led como Output
-   gpio_set_direction(LED_1, GPIO_MODE_OUTPUT);
-   gpio_set_direction(PIN_3V3, GPIO_MODE_OUTPUT);
+   //gpio_set_direction(LED_1, GPIO_MODE_OUTPUT);
+   //gpio_set_direction(PIN_3V3, GPIO_MODE_OUTPUT);
    //Configura o Botão como Input
    gpio_set_direction(BOTAO_PCNT, GPIO_MODE_INPUT);
    gpio_pulldown_en(BOTAO_PCNT);
    gpio_pullup_dis(BOTAO_PCNT); 
    
    //Teste LED
-   gpio_set_level(LED_1, 1);
-   gpio_set_level(PIN_3V3, 1);
+   //gpio_set_level(LED_1, 1);
+   //gpio_set_level(PIN_3V3, 1);
    
    while (1)
    {
       int estado_botao = gpio_get_level(BOTAO_PCNT);
-      gpio_set_level(LED_1, estado_botao);
-      vTaskDelay(100 / portTICK_PERIOD_MS);
+      printf("Estado do Botao: %i\n", estado_botao);
+      vTaskDelay(1000 / portTICK_PERIOD_MS);
    }
    
 }

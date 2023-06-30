@@ -16,13 +16,15 @@
 #include "freertos/task.h"
 #include "esp_log.h"
 #include "freertos/semphr.h"
+#include "sensores/bmp180_cod.h"
 
 //=======================================================
 // --- Função Principal ---
 
 void app_main(void)
 {
-
+   bmp180_task_start();
 }
+
 
 //=======================================================
