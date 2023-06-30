@@ -392,3 +392,28 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/main/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_idf_lib_helpers/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/i2cdev/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/bmp180/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/onewire/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/ds18x20/cmake_install.cmake")
+endif()
+

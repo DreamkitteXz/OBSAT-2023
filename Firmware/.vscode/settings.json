@@ -16,6 +16,7 @@
         "idf.toolsPathWin": "C:\\Espressif",
         "files.associations": {
                 "stdlib.h": "c",
-                "esp_log.h": "c"
+                "esp_log.h": "c",
+                "bmp180.h": "c"
         }
 }
