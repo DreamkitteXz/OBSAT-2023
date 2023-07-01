@@ -23,6 +23,12 @@
                 "ds18b20.h": "c",
                 "ets_sys.h": "c",
                 "semphr.h": "c",
-                "ds18b20_cod.h": "c"
+                "ds18b20_cod.h": "c",
+                "array": "c",
+                "string": "c",
+                "string_view": "c",
+                "i2c.h": "c",
+                "mpu6050_cod.h": "c",
+                "sdkconfig.h": "c"
         }
 }
