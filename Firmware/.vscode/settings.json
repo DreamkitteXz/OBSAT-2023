@@ -17,6 +17,8 @@
         "files.associations": {
                 "stdlib.h": "c",
                 "esp_log.h": "c",
-                "bmp180.h": "c"
+                "bmp180.h": "c",
+                "gpio.h": "c",
+                "bmp180_cod.h": "c"
         }
 }

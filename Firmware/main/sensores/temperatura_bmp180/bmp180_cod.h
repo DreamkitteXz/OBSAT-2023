@@ -3,15 +3,7 @@
 *  Tópico: BMP180
 *  Project: OBSAT-2023
 *  Autor: Kayque Amado
-*  Data: 29 de Junho de 2023
-*/
-
-/*
-*  Código da TASK da medição de Temperatura com o BMP180
-*  Tópico: BMP180
-*  Project: OBSAT-2023
-*  Autor: Kayque Amado
-*  Data: 29 de Junho de 2023
+*  Data: 30 de Junho de 2023
 */
 
 #ifndef BMP180_TASK_H_

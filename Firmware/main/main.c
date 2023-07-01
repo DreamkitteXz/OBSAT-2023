@@ -15,8 +15,8 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_log.h"
-#include "freertos/semphr.h"
-#include "sensores/bmp180_cod.h"
+#include "freertos/semphr.h" 
+#include "sensores/temperatura_bmp180/bmp180_cod.h" //Lib das tasks do BMP180
 
 //=======================================================
 // --- Função Principal ---
@@ -25,6 +25,5 @@ void app_main(void)
 {
    bmp180_task_start();
 }
-
 
 //=======================================================
