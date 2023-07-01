@@ -19,6 +19,10 @@
                 "esp_log.h": "c",
                 "bmp180.h": "c",
                 "gpio.h": "c",
-                "bmp180_cod.h": "c"
+                "bmp180_cod.h": "c",
+                "ds18b20.h": "c",
+                "ets_sys.h": "c",
+                "semphr.h": "c",
+                "ds18b20_cod.h": "c"
         }
 }

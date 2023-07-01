@@ -1,11 +1,3 @@
-/*
-*  Código da TASK da medição de Temperatura com o DS1820 (PAYLOAD)
-*  Tópico: DS18B20 (Temperatura da Placa Solar)
-*  Project: OBSAT-2023
-*  Autor: Kayque Amado
-*  Data: 30 de Junho de 2023
-*/
-
 #include <stdio.h>
 #include "ds18b20.h"
 #include "freertos/FreeRTOS.h"
@@ -13,8 +5,8 @@
 #include "driver/gpio.h"
 
 // Temp Sensors are on GPIO26
-#define TEMP_BUS 2
-#define LED 13
+#define TEMP_BUS 26
+#define LED 2
 #define HIGH 1
 #define LOW 0
 #define digitalWrite gpio_set_level

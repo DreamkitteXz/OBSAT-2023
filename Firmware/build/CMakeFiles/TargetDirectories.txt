@@ -621,6 +621,13 @@ C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/bmp180/CMakeFiles/list_install_
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/bmp180/CMakeFiles/install.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/bmp180/CMakeFiles/install/local.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/bmp180/CMakeFiles/install/strip.dir
+C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/ds18b20/CMakeFiles/__idf_ds18b20.dir
+C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/ds18b20/CMakeFiles/edit_cache.dir
+C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/ds18b20/CMakeFiles/rebuild_cache.dir
+C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/ds18b20/CMakeFiles/list_install_components.dir
+C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/ds18b20/CMakeFiles/install.dir
+C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/ds18b20/CMakeFiles/install/local.dir
+C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/ds18b20/CMakeFiles/install/strip.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/onewire/CMakeFiles/__idf_onewire.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/onewire/CMakeFiles/edit_cache.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/onewire/CMakeFiles/rebuild_cache.dir

@@ -409,6 +409,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/ds18b20/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/onewire/cmake_install.cmake")
 endif()
 
