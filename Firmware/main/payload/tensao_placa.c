@@ -28,11 +28,11 @@ void ler_tensao_placa(void*params)
     {
         int adc_value = adc1_get_raw(ADC1_CHANNEL_4);
         float adc_value_voltage = esp_adc_cal_raw_to_voltage(adc1_get_raw(ADC1_CHANNEL_4), &adc1_chars);
-        float corrente = adc_value_voltage / 193;
+        //float corrente = adc_value_voltage / 193;
         printf("Valor ADC: %d", adc_value); 
         printf("\n");
         printf("Valor ADC em volts: %f V\n ", adc_value_voltage); 
-        printf("Valor da corrente da placa: %0.2f mA\n", corrente);
+        //printf("Valor da corrente da placa: %0.2f mA\n", corrente);
         vTaskDelay(2000/ portTICK_PERIOD_MS);
     }
 }

@@ -1,35 +1,42 @@
-/*
-*  Código com a Lógica principal do Sistema
-*  Tópico: Código Principal
-*  Project: OBSAT-2023
-*  Autor: Kayque Amado
-*  Data: 29 de Junho de 2023
-*/
-
-//=======================================================
-// --- Bibliotecas ---
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "freertos/semphr.h" 
+#include "freertos/semphr.h"
 #include "esp_log.h"
-#include "sensores/temperatura_bmp180/bmp180_cod.h" //Lib das tasks do BMP180
-#include "sensores/temperatura_ds18b20/ds18b20_cod.h" //Lib das tasks do DS18B20
-#include "sensores/acel_gyro/mpu6050_cod.h"//Lib das tasks do MPU6050
-#include "payload/tensao_placa.h"
+#include "driver/pcnt.h"
+#include "esp_err.h"
 
-//=======================================================
-// --- Função Principal ---
+#define PULSE_COUNTER_PIN 26
 
 void app_main(void)
 {
-   bmp180_task_start();
-   ler_temp_ds18b20_start();
-   //PARA UTILIZAR O BMP180 E MPU6050 TEMOS QUE CRIAR UM MUTEX
-   ler_tensao_placa_start();
-}
+    pcnt_config_t pcnt_config = {
+        .pulse_gpio_num = PULSE_COUNTER_PIN,
+        .ctrl_gpio_num = PCNT_PIN_NOT_USED,
+        .lctrl_mode = PCNT_MODE_KEEP,
+        .hctrl_mode = PCNT_MODE_KEEP,
+        .pos_mode = PCNT_COUNT_INC,
+        .neg_mode = PCNT_COUNT_DIS,
+        .counter_h_lim = 100,
+        .counter_l_lim = -100
+    };
 
-//=======================================================
+    pcnt_unit_t pcnt_unit = PCNT_UNIT_0;
+    pcnt_channel_t pcnt_channel = PCNT_CHANNEL_0;
+
+    ESP_ERROR_CHECK(pcnt_unit_config(&pcnt_config));
+    ESP_ERROR_CHECK(pcnt_counter_pause(pcnt_unit));
+    ESP_ERROR_CHECK(pcnt_counter_clear(pcnt_unit));
+
+    pcnt_counter_resume(pcnt_unit);
+
+    while (1)
+    {
+        int16_t pulse_count;
+        pcnt_get_counter_value(pcnt_unit, &pulse_count);
+        printf("Contagem de pulsos: %d\n", pulse_count);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
+    }
+}
