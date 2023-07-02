@@ -1,0 +1,24 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\kayqu\OBSAT-2023\Firmware\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/kayqu/OBSAT-2023/Firmware/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6710 bytes. 0x8f0 bytes (8%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from C:/Users/kayqu/OBSAT-2023/Firmware/main/payload/tensao_placa.h:17,
+                 from C:/Users/kayqu/OBSAT-2023/Firmware/main/main.c:22:
+C:/Espressif/frameworks/esp-idf-v5.0.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from C:/Users/kayqu/OBSAT-2023/Firmware/main/payload/tensao_placa.h:18,
+                 from C:/Users/kayqu/OBSAT-2023/Firmware/main/main.c:22:
+C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable Firmware.elf
+FAILED: Firmware.elf 
+cmd.exe /C "cd . && C:\Espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe -mlongcalls -Wno-frame-address  @CMakeFiles\Firmware.elf.rsp -o Firmware.elf  && cd ."
+c:/espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: esp-idf/main/libmain.a(main.c.obj):(.literal.app_main+0x0): undefined reference to `ler_tensao_placa_start'
+c:/espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/11.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: esp-idf/main/libmain.a(main.c.obj): in function `app_main':
+C:/Users/kayqu/OBSAT-2023/Firmware/main/main.c:30: undefined reference to `ler_tensao_placa_start'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

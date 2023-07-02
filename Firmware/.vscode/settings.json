@@ -29,6 +29,9 @@
                 "string_view": "c",
                 "i2c.h": "c",
                 "mpu6050_cod.h": "c",
-                "sdkconfig.h": "c"
+                "sdkconfig.h": "c",
+                "adc_continuous.h": "c",
+                "tensao_placa.h": "c",
+                "esp_adc_cal.h": "c"
         }
 }
