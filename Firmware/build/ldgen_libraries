@@ -44,6 +44,7 @@ C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/tcp_transport/libtcp_transport.
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_http_client/libesp_http_client.a
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_http_server/libesp_http_server.a
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_https_ota/libesp_https_ota.a
+C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_https_server/libesp_https_server.a
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_lcd/libesp_lcd.a
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/protobuf-c/libprotobuf-c.a
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/protocomm/libprotocomm.a

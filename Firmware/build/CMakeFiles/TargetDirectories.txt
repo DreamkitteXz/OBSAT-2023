@@ -460,6 +460,7 @@ C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_https_ota/CMakeFiles/list_i
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_https_ota/CMakeFiles/install.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_https_ota/CMakeFiles/install/local.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_https_ota/CMakeFiles/install/strip.dir
+C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_https_server/CMakeFiles/__idf_esp_https_server.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_https_server/CMakeFiles/edit_cache.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_https_server/CMakeFiles/rebuild_cache.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_https_server/CMakeFiles/list_install_components.dir

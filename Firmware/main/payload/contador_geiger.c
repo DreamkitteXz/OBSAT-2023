@@ -1,47 +1,53 @@
-/*
-*  Código da TASK de Medição de eventos do Contador Geiger (PAYLOAD)
-*  Tópico: Contador Geiger
-*  Project: OBSAT-2023
-*  Autor: Kayque Amado
-*  Data: 29 de Junho de 2023
-*/
+// ESTA DANDO ERRADO
 
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "freertos/semphr.h" 
+#include "freertos/semphr.h"
 #include "esp_log.h"
-#include "driver/pulse_cnt.h"
+#include "driver/pcnt.h"
+#include "esp_err.h"
 
-#define EXAMPLE_PCNT_HIGH_LIMIT 100
-#define EXAMPLE_PCNT_LOW_LIMIT  -100
-#define EXAMPLE_CHAN_GPIO_A 25
+#define PULSE_COUNTER_PIN 26
 
-void ler_contador(void *params)
+void app_main(void)
 {
+    pcnt_config_t pcnt_config = {
+        .pulse_gpio_num = PULSE_COUNTER_PIN,
+        .ctrl_gpio_num = PCNT_PIN_NOT_USED,
+        .lctrl_mode = PCNT_MODE_KEEP,
+        .hctrl_mode = PCNT_MODE_KEEP,
+        .pos_mode = PCNT_COUNT_INC,
+        .neg_mode = PCNT_COUNT_DIS,
+        .counter_h_lim = 100,
+        .counter_l_lim = -100
+    };
+    pcnt_glitch_filter_config_t filter_config = {
+        .max_glitch_ns = 12.5,
+    };
+    pcnt_unit_t pcnt_unit = PCNT_UNIT_0;
+    pcnt_channel_t pcnt_channel = PCNT_CHANNEL_0;
 
-   pcnt_unit_config_t unit_config = {
-    .high_limit = EXAMPLE_PCNT_HIGH_LIMIT,
-    .low_limit = EXAMPLE_PCNT_LOW_LIMIT,
-   };
-   pcnt_unit_handle_t pcnt_unit = NULL;
-   ESP_ERROR_CHECK(pcnt_new_unit(&unit_config, &pcnt_unit));
-
-   pcnt_chan_config_t chan_config = {
-    .edge_gpio_num = EXAMPLE_CHAN_GPIO_A,
-   };
-   pcnt_channel_handle_t pcnt_chan = NULL;
-   ESP_ERROR_CHECK(pcnt_new_channel(pcnt_unit, &chan_config, &pcnt_chan));
-
-   // decrease the counter on rising edge, increase the counter on falling edge
-   ESP_ERROR_CHECK(pcnt_channel_set_edge_action(pcnt_chan, PCNT_CHANNEL_EDGE_ACTION_DECREASE, PCNT_CHANNEL_EDGE_ACTION_INCREASE));
-   // keep the counting mode when the control signal is high level, and reverse the counting mode when the control signal is low level
-   ESP_ERROR_CHECK(pcnt_channel_set_level_action(pcnt_chan, PCNT_CHANNEL_LEVEL_ACTION_KEEP, PCNT_CHANNEL_LEVEL_ACTION_INVERSE));
+    //pcnt_glitch_filter_config_t filter_config = {
+    //.max_glitch_ns = 1000,
+    //};
    
-   int pulse_count = 0;
-   ESP_ERROR_CHECK(pcnt_unit_get_count(pcnt_unit, &pulse_count));
-   printf("Valor do contador: %d", pulse_count);
-   
+
+    //ESP_ERROR_CHECK(pcnt_unit_set_glitch_filter(pcnt_unit, &filter_config));
+
+    ESP_ERROR_CHECK(pcnt_unit_config(&pcnt_config));
+    ESP_ERROR_CHECK(pcnt_counter_pause(pcnt_unit));
+    ESP_ERROR_CHECK(pcnt_counter_clear(pcnt_unit));
+    ESP_ERROR_CHECK(pcnt_unit_set_glitch_filter(pcnt_unit, &filter_config));
+    pcnt_counter_resume(pcnt_unit);
+
+    while (1)
+    {
+        int16_t pulse_count;
+        pcnt_get_counter_value(pcnt_unit, &pulse_count);
+        printf("Contagem de pulsos: %d\n", pulse_count);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
+    }
 }
