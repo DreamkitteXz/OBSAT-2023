@@ -1,0 +1,119 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file C:/Users/kayqu/OBSAT-2023/Firmware/sdkconfig
+-- App "Firmware" version: 04b6183-dirty
+-- Adding linker script C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.0.1/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bmp180 bootloader bootloader_support bt cmock console cxx driver ds18b20 efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_idf_lib_helpers esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser i2cdev idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash onewire openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Espressif/frameworks/esp-idf-v5.0.1/components/app_trace C:/Espressif/frameworks/esp-idf-v5.0.1/components/app_update C:/Users/kayqu/OBSAT-2023/Firmware/components/bmp180 C:/Espressif/frameworks/esp-idf-v5.0.1/components/bootloader C:/Espressif/frameworks/esp-idf-v5.0.1/components/bootloader_support C:/Espressif/frameworks/esp-idf-v5.0.1/components/bt C:/Espressif/frameworks/esp-idf-v5.0.1/components/cmock C:/Espressif/frameworks/esp-idf-v5.0.1/components/console C:/Espressif/frameworks/esp-idf-v5.0.1/components/cxx C:/Espressif/frameworks/esp-idf-v5.0.1/components/driver C:/Users/kayqu/OBSAT-2023/Firmware/components/ds18b20 C:/Espressif/frameworks/esp-idf-v5.0.1/components/efuse C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp-tls C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_adc C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_app_format C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_common C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_eth C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_event C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_gdbstub C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_hid C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_http_client C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_http_server C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_https_ota C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_https_server C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_hw_support C:/Users/kayqu/OBSAT-2023/Firmware/components/esp_idf_lib_helpers C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_lcd C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_local_ctrl C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_netif C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_partition C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_phy C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_pm C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_psram C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_ringbuf C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_rom C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_system C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_timer C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_wifi C:/Espressif/frameworks/esp-idf-v5.0.1/components/espcoredump C:/Espressif/frameworks/esp-idf-v5.0.1/components/esptool_py C:/Espressif/frameworks/esp-idf-v5.0.1/components/fatfs C:/Espressif/frameworks/esp-idf-v5.0.1/components/freertos C:/Espressif/frameworks/esp-idf-v5.0.1/components/hal C:/Espressif/frameworks/esp-idf-v5.0.1/components/heap C:/Espressif/frameworks/esp-idf-v5.0.1/components/http_parser C:/Users/kayqu/OBSAT-2023/Firmware/components/i2cdev C:/Espressif/frameworks/esp-idf-v5.0.1/components/idf_test C:/Espressif/frameworks/esp-idf-v5.0.1/components/ieee802154 C:/Espressif/frameworks/esp-idf-v5.0.1/components/json C:/Espressif/frameworks/esp-idf-v5.0.1/components/log C:/Espressif/frameworks/esp-idf-v5.0.1/components/lwip C:/Users/kayqu/OBSAT-2023/Firmware/main C:/Espressif/frameworks/esp-idf-v5.0.1/components/mbedtls C:/Espressif/frameworks/esp-idf-v5.0.1/components/mqtt C:/Espressif/frameworks/esp-idf-v5.0.1/components/newlib C:/Espressif/frameworks/esp-idf-v5.0.1/components/nvs_flash C:/Users/kayqu/OBSAT-2023/Firmware/components/onewire C:/Espressif/frameworks/esp-idf-v5.0.1/components/openthread C:/Espressif/frameworks/esp-idf-v5.0.1/components/partition_table C:/Espressif/frameworks/esp-idf-v5.0.1/components/perfmon C:/Espressif/frameworks/esp-idf-v5.0.1/components/protobuf-c C:/Espressif/frameworks/esp-idf-v5.0.1/components/protocomm C:/Espressif/frameworks/esp-idf-v5.0.1/components/pthread C:/Espressif/frameworks/esp-idf-v5.0.1/components/sdmmc C:/Espressif/frameworks/esp-idf-v5.0.1/components/soc C:/Espressif/frameworks/esp-idf-v5.0.1/components/spi_flash C:/Espressif/frameworks/esp-idf-v5.0.1/components/spiffs C:/Espressif/frameworks/esp-idf-v5.0.1/components/tcp_transport C:/Espressif/frameworks/esp-idf-v5.0.1/components/ulp C:/Espressif/frameworks/esp-idf-v5.0.1/components/unity C:/Espressif/frameworks/esp-idf-v5.0.1/components/usb C:/Espressif/frameworks/esp-idf-v5.0.1/components/vfs C:/Espressif/frameworks/esp-idf-v5.0.1/components/wear_levelling C:/Espressif/frameworks/esp-idf-v5.0.1/components/wifi_provisioning C:/Espressif/frameworks/esp-idf-v5.0.1/components/wpa_supplicant C:/Espressif/frameworks/esp-idf-v5.0.1/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/kayqu/OBSAT-2023/Firmware/build
+[1/12] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\kayqu\OBSAT-2023\Firmware\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/kayqu/OBSAT-2023/Firmware/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6710 bytes. 0x8f0 bytes (8%) free.
+[2/10] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[3/10] Linking C static library esp-idf\esp_app_format\libesp_app_format.a
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from C:/Users/kayqu/OBSAT-2023/Firmware/main/payload/tensao_placa.h:17,
+                 from C:/Users/kayqu/OBSAT-2023/Firmware/main/main.c:29:
+C:/Espressif/frameworks/esp-idf-v5.0.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from C:/Users/kayqu/OBSAT-2023/Firmware/main/payload/tensao_placa.h:18,
+                 from C:/Users/kayqu/OBSAT-2023/Firmware/main/main.c:29:
+C:/Espressif/frameworks/esp-idf-v5.0.1/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable Firmware.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/kayqu/OBSAT-2023/Firmware/build/Firmware.bin
+[9/10] cmd.exe /C "cd /D C:\Users\kayqu\OBSAT-2023\Firmware\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/kayqu/OBSAT-2023/Firmware/build/partition_table/partition-table.bin C:/Users/kayqu/OBSAT-2023/Firmware/build/Firmware.bin"
+Firmware.bin binary size 0xd5910 bytes. Smallest app partition is 0x100000 bytes. 0x2a6f0 bytes (17%) free.
+[9/10] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.0.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.0.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.0_py3.8_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.0.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/kayqu/OBSAT-2023/Firmware/build -P C:/Espressif/frameworks/esp-idf-v5.0.1/components/esptool_py/run_serial_tool.cmake"
+esptool esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 Firmware.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin
+esptool.py v4.5.1
+Serial port COM5
+Connecting.........
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: a0:b7:65:58:55:ac
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000e5fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000d000 to 0x0000efff...
+Compressed 26384 bytes to 16453...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076ad... (100 %)
+Wrote 26384 bytes (16453 compressed) at 0x00001000 in 0.6 seconds (effective 326.1 kbit/s)...
+Hash of data verified.
+Compressed 874768 bytes to 558289...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001bef4... (5 %)
+Writing at 0x00026a8d... (8 %)
+Writing at 0x0002c235... (11 %)
+Writing at 0x00033e4b... (14 %)
+Writing at 0x0003c739... (17 %)
+Writing at 0x00042186... (20 %)
+Writing at 0x00047c1b... (22 %)
+Writing at 0x0004ddf2... (25 %)
+Writing at 0x0005378d... (28 %)
+Writing at 0x0005941a... (31 %)
+Writing at 0x0005f209... (34 %)
+Writing at 0x000643fe... (37 %)
+Writing at 0x000698bf... (40 %)
+Writing at 0x0006eac6... (42 %)
+Writing at 0x000741c8... (45 %)
+Writing at 0x00079937... (48 %)
+Writing at 0x0007f12c... (51 %)
+Writing at 0x000850ed... (54 %)
+Writing at 0x0008a694... (57 %)
+Writing at 0x000900dc... (60 %)
+Writing at 0x000957bc... (62 %)
+Writing at 0x0009afca... (65 %)
+Writing at 0x000a099d... (68 %)
+Writing at 0x000a6ae5... (71 %)
+Writing at 0x000ac418... (74 %)
+Writing at 0x000b26e0... (77 %)
+Writing at 0x000b7e95... (80 %)
+Writing at 0x000bd85a... (82 %)
+Writing at 0x000c31d5... (85 %)
+Writing at 0x000cc0d4... (88 %)
+Writing at 0x000d44fc... (91 %)
+Writing at 0x000da101... (94 %)
+Writing at 0x000dfbbb... (97 %)
+Writing at 0x000e5005... (100 %)
+Wrote 874768 bytes (558289 compressed) at 0x00010000 in 14.1 seconds (effective 495.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 138...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (138 compressed) at 0x00008000 in 0.1 seconds (effective 277.0 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000d000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000d000 in 0.1 seconds (effective 736.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

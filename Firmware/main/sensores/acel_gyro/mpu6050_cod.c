@@ -45,7 +45,7 @@ static char tag[] = "mpu6050";
 #undef ESP_ERROR_CHECK
 #define ESP_ERROR_CHECK(x)   do { esp_err_t rc = (x); if (rc != ESP_OK) { ESP_LOGE("err", "esp_err_t = %d", rc); assert(0 && #x);} } while(0);
 
-void task_mpu6050(void *params) {
+void task_mpu6050_acl(void *params) {
 	ESP_LOGD(tag, ">> mpu6050");
 	i2c_config_t conf;
 	conf.mode = I2C_MODE_MASTER;
@@ -114,7 +114,7 @@ void task_mpu6050(void *params) {
 		accel_x = (data[0] << 8) | data[1];
 		accel_y = (data[2] << 8) | data[3];
 		accel_z = (data[4] << 8) | data[5];
-		printf("accel_x: %d, accel_y: %d, accel_z: %d\n", accel_x, accel_y, accel_z);
+		printf("accel_x: %d\n, accel_y: %d\n, accel_z: %d\n", accel_x, accel_y, accel_z);
 
 		vTaskDelay(1000/portTICK_PERIOD_MS);
 	}
@@ -122,7 +122,7 @@ void task_mpu6050(void *params) {
 	vTaskDelete(NULL);
 } // task_hmc5883l
 
-void mpu6050_task_start(void)
+void mpu6050_task_start_acl(void)
 {
-   xTaskCreate(task_mpu6050,"MPU6050", configMINIMAL_STACK_SIZE * 15, NULL, 1, NULL);
+   xTaskCreate(task_mpu6050_acl,"MPU6050", configMINIMAL_STACK_SIZE * 15, NULL, 1, NULL);
 }

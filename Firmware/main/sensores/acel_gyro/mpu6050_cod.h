@@ -6,8 +6,8 @@
 *  Data: 29 de Junho de 2023
 */
 
-#ifndef MPU6050_TASK_H
-#define MPU6050_TASK_H
+#ifndef MPU6050_TASK_H_ACL
+#define MPU6050_TASK_H_ACL
 
 #include <driver/i2c.h>
 #include <esp_log.h>
@@ -15,9 +15,7 @@
 #include <freertos/task.h>
 #include <math.h>
 
-#include "sdkconfig.h"
-
-void task_mpu6050(void *params);
-void mpu6050_task_start(void);
+void task_mpu6050_acl(void *params);
+void mpu6050_task_start_acl(void);
 
 #endif // MPU6050_TASK_H
