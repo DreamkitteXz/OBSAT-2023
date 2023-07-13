@@ -45,17 +45,18 @@ esp_err_t _http_event_handle(esp_http_client_event_t *evt)
 
 void http_request()
 {
-   esp_http_client_config_t config = {
-   .url = "http://quotes.rest/qod",
-   .event_handler = _http_event_handle,
-   };
-   esp_http_client_handle_t client = esp_http_client_init(&config);
-   esp_err_t err = esp_http_client_perform(client);
+   esp_http_client_config_t config_post = {
+        .url = "http://httpbin.org/post",
+        .method = HTTP_METHOD_POST,
+        .cert_pem = NULL,
+        .event_handler = _http_event_handle};
+        
+    esp_http_client_handle_t client = esp_http_client_init(&config_post);
 
-   if (err == ESP_OK) {
-    int status = esp_http_client_get_status_code(client);
-    int len = esp_http_client_get_content_length(client);
-   ESP_LOGI(TAG, "Status = %d, content_length = %d", status, len);
-   }
-   esp_http_client_cleanup(client);
+    char  *post_data = "{\"equipe:\"\"77\"}";
+    esp_http_client_set_post_field(client, post_data, strlen(post_data));
+    esp_http_client_set_header(client, "Content-Type", "application/json");
+
+    esp_http_client_perform(client);
+    esp_http_client_cleanup(client);
 }

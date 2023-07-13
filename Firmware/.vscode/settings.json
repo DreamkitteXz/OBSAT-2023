@@ -35,6 +35,7 @@
                 "esp_adc_cal.h": "c",
                 "event_groups.h": "c",
                 "http_client.h": "c",
-                "esp_http_client.h": "c"
+                "esp_http_client.h": "c",
+                "esp_event.h": "c"
         }
 }

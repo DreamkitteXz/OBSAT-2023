@@ -69,8 +69,6 @@ C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_pm/CMakeFiles/list_install_
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_pm/CMakeFiles/install.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_pm/CMakeFiles/install/local.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/esp_pm/CMakeFiles/install/strip.dir
-C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir
-C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/mbedtls/CMakeFiles/custom_bundle.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/mbedtls/CMakeFiles/edit_cache.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/mbedtls/CMakeFiles/rebuild_cache.dir
 C:/Users/kayqu/OBSAT-2023/Firmware/build/esp-idf/mbedtls/CMakeFiles/list_install_components.dir

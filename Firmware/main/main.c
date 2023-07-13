@@ -47,12 +47,10 @@ void app_main(void)
 #include "freertos/semphr.h" 
 #include "esp_log.h"
 
-    #include <stdio.h>
 #include "nvs_flash.h"
 #include "esp_wifi.h"
 #include "esp_event.h"
 #include "esp_http_client.h"
-#include "esp_log.h"
 
 #include "servidor/wifi.h"
 #include "servidor/http_client.h"
@@ -60,7 +58,7 @@ void app_main(void)
 void app_main(void)
 {
     //inicializar o NVS
-    esp_err_t ret = nvs_flash_init();
+        esp_err_t ret = nvs_flash_init();
     if(ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND)
     {
         ESP_ERROR_CHECK(nvs_flash_erase());
@@ -71,5 +69,5 @@ void app_main(void)
     wifi_start();
     //xTaskCreate(&RealizaHTTPRequest,"Processa HTTP", 4096, NULL,1,NULL);
     vTaskDelay(10000 / portTICK_PERIOD_MS); // O CERTO SERIA CRIAR O MUTEX
-    //http_request();
+    http_request();
 }

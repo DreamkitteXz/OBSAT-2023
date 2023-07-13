@@ -3,7 +3,6 @@ $<TARGET_FILE:__idf_esp_ringbuf>
 $<TARGET_FILE:__idf_efuse>
 $<TARGET_FILE:__idf_driver>
 $<TARGET_FILE:__idf_esp_pm>
-$<TARGET_FILE:__idf_mbedtls>
 $<TARGET_FILE:__idf_esp_app_format>
 $<TARGET_FILE:__idf_bootloader_support>
 $<TARGET_FILE:__idf_esp_partition>
