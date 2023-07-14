@@ -3,5 +3,5 @@ idf_component_register(
    SRCS tensao_placa.c
    SRCS contador_geiger.c
    SRCS nivel_bateria.c 
-   REQUIRES freertos driver esp_adc_cal
+   REQUIRES driver freertos gpio
 )

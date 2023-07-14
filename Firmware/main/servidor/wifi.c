@@ -11,8 +11,8 @@
 
 #include "wifi.h"
 
-#define WIFI_SSID "Dada"
-#define WIFI_PASS "damk301809"
+#define WIFI_SSID "ETE-ALUNOS"
+#define WIFI_PASS "etefmc890"
 #define WIFI_MAXIMUM_RETRY 5
 
 #define WIFI_CONNECTED_BIT BIT0

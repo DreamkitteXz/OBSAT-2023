@@ -15,6 +15,7 @@
 #include "freertos/task.h"
 #include "freertos/semphr.h" 
 #include "esp_log.h"
+#include "driver/gpio.h"
 
 //Wifi e servidor
 #include "nvs_flash.h"
@@ -27,6 +28,7 @@
 #include "sensores/temperatura_ds18b20/ds18b20_cod.h" //Lib das tasks do DS18B20
 #include "sensores/acel_gyro/mpu6050_cod.h" //Lib das tasks do MPU6050 Acl
 #include "payload/tensao_placa.h" //Lib da task de ler tensão da placa
+#include "payload/contador_geiger.h"
 #include "servidor/wifi.h" //Lib Wifi 
 #include "servidor/http_client.h" // Lib requisição POST
 
@@ -50,17 +52,18 @@ void app_main(void)
     //mutexI2C = xSemaphoreCreateMutex();
 
     // --- I2C ---
-    bmp180_task_start();
+    //bmp180_task_start();
     //mpu6050_task_start();
 
     // --- ONEWIRE ---
-    ler_temp_ds18b20_start(); //Inicia a task de ler TEMP DS18B20
+    //ler_temp_ds18b20_start(); //Inicia a task de ler TEMP DS18B20
 
     // --- PAYLOAD ---
-    ler_tensao_placa_start(); // Inicia a task de ler_tensao_placa
+    //ler_tensao_placa_start(); // Inicia a task de ler_tensao_placa
+    pulse_counter_start();
 
     //--- Wifi ---
-    wifi_start();
+    //wifi_start();
 
     //--- HTTP POST ---
     //vTaskDelay(10000 / portTICK_PERIOD_MS); //Aguarda a conexão do wifi

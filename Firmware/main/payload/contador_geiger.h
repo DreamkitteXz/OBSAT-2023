@@ -1,7 +1,16 @@
-/*
-*  Arquivo com as funções necessárias do Contador Geiger para a Lógica principal (PAYLOAD)
-*  Tópico: Contador Geiger
-*  Project: OBSAT-2023
-*  Autor: Kayque Amado
-*  Data: 29 de Junho de 2023
-*/
+#ifndef PULSE_COUNTER_H_
+#define PULSE_COUNTER_H_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void pcnt_contador(void *params);
+void pulse_counter_suply(void *params);
+void pulse_counter_start(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* PULSE_COUNTER_H_ */

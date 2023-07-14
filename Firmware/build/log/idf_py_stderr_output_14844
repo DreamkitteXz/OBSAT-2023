@@ -1,0 +1,78 @@
+CMake Error at C:/Espressif/frameworks/esp-idf-v5.0.1/tools/cmake/component.cmake:224 (message):
+  CMake Warning (dev) at build_properties.temp.cmake:8:
+
+    Syntax Warning in cmake code at column 51
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    C:/Espressif/frameworks/esp-idf-v5.0.1/tools/cmake/scripts/component_get_requirements.cmake:3 (include)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  
+
+  CMake Warning (dev) at
+  C:/Users/kayqu/OBSAT-2023/Firmware/main/CMakeLists.txt:1:
+
+    Syntax Warning in cmake code at column 271
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    C:/Espressif/frameworks/esp-idf-v5.0.1/tools/cmake/scripts/component_get_requirements.cmake:106 (include)
+    C:/Espressif/frameworks/esp-idf-v5.0.1/tools/cmake/scripts/component_get_requirements.cmake:124 (__component_get_requirements)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  
+
+  CMake Warning (dev) at
+  C:/Users/kayqu/OBSAT-2023/Firmware/main/CMakeLists.txt:2:
+
+    Syntax Warning in cmake code at column 35
+
+  
+
+    Argument not separated from preceding token by whitespace.
+
+  Call Stack (most recent call first):
+
+    C:/Espressif/frameworks/esp-idf-v5.0.1/tools/cmake/scripts/component_get_requirements.cmake:106 (include)
+    C:/Espressif/frameworks/esp-idf-v5.0.1/tools/cmake/scripts/component_get_requirements.cmake:124 (__component_get_requirements)
+
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  
+
+  CMake Error at C:/Users/kayqu/OBSAT-2023/Firmware/main/CMakeLists.txt:3:
+
+    Parse error.  Function missing ending ")".  Instead found unterminated
+    string with text ")
+
+  
+
+    ".
+
+  Call Stack (most recent call first):
+
+    C:/Espressif/frameworks/esp-idf-v5.0.1/tools/cmake/scripts/component_get_requirements.cmake:106 (include)
+    C:/Espressif/frameworks/esp-idf-v5.0.1/tools/cmake/scripts/component_get_requirements.cmake:124 (__component_get_requirements)
+
+  
+
+  
+
+Call Stack (most recent call first):
+  C:/Espressif/frameworks/esp-idf-v5.0.1/tools/cmake/build.cmake:553 (__component_get_requirements)
+  C:/Espressif/frameworks/esp-idf-v5.0.1/tools/cmake/project.cmake:440 (idf_build_process)
+  CMakeLists.txt:10 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

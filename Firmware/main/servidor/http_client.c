@@ -53,7 +53,7 @@ void http_request()
         
     esp_http_client_handle_t client = esp_http_client_init(&config_post);
 
-    char  *post_data = "{\"equipe\":78,\"bateria\":24,\"temperatura\":30,\"pressao\":1,\"giroscopio\":[42,90,30],\"acelerometro\":[10,3,4],\"payload\":{\"contador\":3.1415,\"tensao\":3.1415,\"temp\":3.1415}}";
+    char  *post_data = "{\"equipe\":76,\"bateria\":24,\"temperatura\":30,\"pressao\":1,\"giroscopio\":[42,90,30],\"acelerometro\":[10,3,4],\"payload\":{\"contador\":3.1415,\"tensao\":3.1415,\"temp\":3.1415}}";
     esp_http_client_set_post_field(client, post_data, strlen(post_data));
     esp_http_client_set_header(client, "Content-Type", "application/json");
 
