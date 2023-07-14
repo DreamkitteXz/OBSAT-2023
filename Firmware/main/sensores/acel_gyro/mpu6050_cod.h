@@ -15,7 +15,8 @@
 #include <freertos/task.h>
 #include <math.h>
 
-void task_mpu6050_acl(void *params);
-void mpu6050_task_start_acl(void);
+void task_mpu6050(void *params);
+void mpu6050_task_start(void);
+
 
 #endif // MPU6050_TASK_H

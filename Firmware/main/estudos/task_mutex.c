@@ -43,7 +43,7 @@ void task2(void * params) // Task de Escrever no Display
 // =======================================================
 // --- SIMULANDO O MUTEXI2C ---
 
-float acessa_i2c(int comando) // Função de acesso ao I2C
+float acessa_i2c(comando) // Função de acesso ao I2C
 {
    if (comando == 1)
    {

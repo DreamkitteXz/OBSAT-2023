@@ -26,10 +26,11 @@
 #include "sensores/temperatura_bmp180/bmp180_cod.h" //Lib das tasks do BMP180
 #include "sensores/temperatura_ds18b20/ds18b20_cod.h" //Lib das tasks do DS18B20
 #include "sensores/acel_gyro/mpu6050_cod.h" //Lib das tasks do MPU6050 Acl
-#include "sensores/acel_gyro/gyro.h"//Lib das tasks do MPU6050 Gyro
 #include "payload/tensao_placa.h" //Lib da task de ler tensão da placa
 #include "servidor/wifi.h" //Lib Wifi 
 #include "servidor/http_client.h" // Lib requisição POST
+
+SemaphoreHandle_t mutexI2C;
 
 //=======================================================
 // --- Função Principal ---
@@ -45,10 +46,12 @@ void app_main(void)
     }
     ESP_ERROR_CHECK(ret);
 
+    //Criando o Mutex I2C
+    mutexI2C = xSemaphoreCreateMutex();
+
     // --- I2C ---
     //bmp180_task_start(); //Inicia a task de ler TEMP BMP180
-    //mpu6050_task_start_acl(); // Inicia a task de ler_acelerometro
-    //mpu6050_task_start_gyro();
+    mpu6050_task_start(); // Inicia a task de ler_acelerometro
 
     // --- ONEWIRE ---
     //ler_temp_ds18b20_start(); //Inicia a task de ler TEMP DS18B20
@@ -57,7 +60,7 @@ void app_main(void)
     //ler_tensao_placa_start(); // Inicia a task de ler_tensao_placa
 
     //--- Wifi ---
-    wifi_start();
+    //wifi_start();
 
     //--- HTTP POST ---
     //vTaskDelay(10000 / portTICK_PERIOD_MS); //Aguarda a conexão do wifi
