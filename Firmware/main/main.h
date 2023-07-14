@@ -32,5 +32,6 @@
 extern SemaphoreHandle_t mutexI2C;
 
 void app_main(void);
+void acessa_i2c(int comando);
 
 #endif /* MAIN_H */

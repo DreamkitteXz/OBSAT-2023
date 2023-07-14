@@ -18,5 +18,4 @@
 void task_mpu6050(void *params);
 void mpu6050_task_start(void);
 
-
 #endif // MPU6050_TASK_H

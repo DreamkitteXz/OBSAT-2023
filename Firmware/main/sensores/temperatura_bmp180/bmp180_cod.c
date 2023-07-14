@@ -49,6 +49,8 @@ void app_main(void)
 #include <esp_system.h>
 #include <bmp180.h>
 #include <string.h>
+#include "main.h"
+#include <math.h>
 
 #ifndef APP_CPU_NUM
 #define APP_CPU_NUM PRO_CPU_NUM
@@ -75,9 +77,8 @@ void bmp180_test(void *pvParameters)
              * sdkconfig for ESP8266, which is enabled by default for this
              * example. see sdkconfig.defaults.esp8266
              */
-            printf("Temperature: %.2f degrees Celsius; Pressure: %" PRIu32 " Pa\n", temp, pressure);
-
-        vTaskDelay(pdMS_TO_TICKS(5000));
+            printf("Temperature: %.2f degrees Celsius; Pressure: %.2f" " atm\n", temp, pressure * 0.00000986923);   
+        vTaskDelay(3000 / portTICK_PERIOD_MS);
     }
 }
 

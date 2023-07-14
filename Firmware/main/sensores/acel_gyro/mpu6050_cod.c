@@ -31,6 +31,7 @@ static char tag[] = "mpu6050";
 #define ESP_ERROR_CHECK(x)   do { esp_err_t rc = (x); if (rc != ESP_OK) { ESP_LOGE("err", "esp_err_t = %d", rc); assert(0 && #x);} } while(0);
 
 void task_mpu6050(void *params) {
+    
     ESP_LOGD(tag, ">> mpu6050");
 
     // Configuração do barramento I2C

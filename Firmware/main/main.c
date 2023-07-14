@@ -47,20 +47,20 @@ void app_main(void)
     ESP_ERROR_CHECK(ret);
 
     //Criando o Mutex I2C
-    mutexI2C = xSemaphoreCreateMutex();
+    //mutexI2C = xSemaphoreCreateMutex();
 
     // --- I2C ---
-    //bmp180_task_start(); //Inicia a task de ler TEMP BMP180
-    mpu6050_task_start(); // Inicia a task de ler_acelerometro
+    bmp180_task_start();
+    //mpu6050_task_start();
 
     // --- ONEWIRE ---
-    //ler_temp_ds18b20_start(); //Inicia a task de ler TEMP DS18B20
+    ler_temp_ds18b20_start(); //Inicia a task de ler TEMP DS18B20
 
     // --- PAYLOAD ---
-    //ler_tensao_placa_start(); // Inicia a task de ler_tensao_placa
+    ler_tensao_placa_start(); // Inicia a task de ler_tensao_placa
 
     //--- Wifi ---
-    //wifi_start();
+    wifi_start();
 
     //--- HTTP POST ---
     //vTaskDelay(10000 / portTICK_PERIOD_MS); //Aguarda a conexão do wifi
