@@ -21,8 +21,8 @@ void pcnt_contador(void * params)
         .hctrl_mode = PCNT_MODE_KEEP,
         .pos_mode = PCNT_COUNT_INC,
         .neg_mode = PCNT_COUNT_DIS,
-        .counter_h_lim = 100,
-        .counter_l_lim = -100
+        .counter_h_lim = 32767,
+        .counter_l_lim = -32767
     };
     //pcnt_glitch_filter_config_t filter_config = {
      //   .max_glitch_ns = 12.5,
@@ -48,7 +48,7 @@ void pcnt_contador(void * params)
         int16_t pulse_count;
         pcnt_get_counter_value(pcnt_unit, &pulse_count);
         printf("Contagem de pulsos: %d\n", pulse_count);
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        vTaskDelay(10000 / portTICK_PERIOD_MS);
     }
 }
 void pulse_counter_suply(void *params)

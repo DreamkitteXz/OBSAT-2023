@@ -36,6 +36,9 @@
                 "event_groups.h": "c",
                 "http_client.h": "c",
                 "esp_http_client.h": "c",
-                "esp_event.h": "c"
-        }
+                "esp_event.h": "c",
+                "esp_system.h": "c",
+                "bmp180q.h": "c"
+        },
+        "idf.flashType": "UART"
 }

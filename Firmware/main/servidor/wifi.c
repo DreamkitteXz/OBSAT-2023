@@ -11,8 +11,8 @@
 
 #include "wifi.h"
 
-#define WIFI_SSID "ETE-ALUNOS"
-#define WIFI_PASS "etefmc890"
+#define WIFI_SSID "Dada"
+#define WIFI_PASS "damk301809"
 #define WIFI_MAXIMUM_RETRY 5
 
 #define WIFI_CONNECTED_BIT BIT0
@@ -49,18 +49,26 @@ static void event_handler(void* arg, esp_event_base_t event_base,
 void wifi_start()
 {
    s_wifi_event_group = xEventGroupCreate();
+   printf("Cheguei");
 
    ESP_ERROR_CHECK(esp_netif_init());
+      printf("Cheguei 1");
+
 
    ESP_ERROR_CHECK(esp_event_loop_create_default());
+      printf("Cheguei 2");
+
 
    esp_netif_create_default_wifi_sta();
+      printf("Cheguei 3");
+
 
    wifi_init_config_t wifi_config = WIFI_INIT_CONFIG_DEFAULT();
    ESP_ERROR_CHECK(esp_wifi_init(&wifi_config));
 
    ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT, ESP_EVENT_ANY_ID, &event_handler, NULL));
    ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &event_handler, NULL));
+  printf("Cheguei 0");
 
    wifi_config_t config = {
       .sta = {
@@ -71,8 +79,12 @@ void wifi_start()
 
    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
    ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &config));
+         printf("Cheguei 45");
 
+    ESP_ERROR_CHECK(esp_wifi_stop());
    ESP_ERROR_CHECK(esp_wifi_start());
+         printf("Cheguei 42");
+
 
    /* Waiting until either the connection is established (WIFI_CONNECTED_BIT) or connection failed for the maximum
      * number of re-tries (WIFI_FAIL_BIT). The bits are set by event_handler() (see above) */

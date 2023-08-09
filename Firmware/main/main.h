@@ -22,15 +22,17 @@
 #include "esp_event.h"
 #include "esp_http_client.h"
 
-#include "sensores/temperatura_bmp180/bmp180_cod.h"
 #include "sensores/temperatura_ds18b20/ds18b20_cod.h"
-#include "sensores/acel_gyro/mpu6050_cod.h"
+#include "sensores/sensores_i2c/i2c.h"
 #include "payload/tensao_placa.h"
 #include "servidor/wifi.h"
 #include "servidor/http_client.h"
-
-extern SemaphoreHandle_t mutexI2C;
+#include "nvs_flash.h"
 
 void app_main(void);
+void save_data_to_eeprom(float data);
+float read_data_from_eeprom();
+
+
 
 #endif /* MAIN_H */

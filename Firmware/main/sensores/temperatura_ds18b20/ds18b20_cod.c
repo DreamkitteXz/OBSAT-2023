@@ -23,6 +23,7 @@ DeviceAddress tempSensors[2];
 #ifndef APP_CPU_NUM
 #define APP_CPU_NUM PRO_CPU_NUM
 #endif
+float cTemp;
 
 //=======================================================
 // --- TASK Principal ---
@@ -34,9 +35,9 @@ void ler_temp_ds18b20(void * params) //Fazer uma task
 
    while (1)
    {
-      float cTemp = ds18b20_get_temp();
+      cTemp = ds18b20_get_temp();
       printf("Temperatura: %0.1f C\n", cTemp);
-      vTaskDelay(1000 / portTICK_PERIOD_MS);
+      vTaskDelay(60000 / portTICK_PERIOD_MS);
    }
 }
 

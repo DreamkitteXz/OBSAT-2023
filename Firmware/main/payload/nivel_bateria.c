@@ -22,12 +22,12 @@ void ler_tensao_placa(void*params)
     esp_adc_cal_characterize(ADC_UNIT_1, ADC_ATTEN_DB_11, ADC_WIDTH_BIT_DEFAULT, 0, &adc1_chars);
 
     adc1_config_width(ADC_WIDTH_BIT_DEFAULT);
-    adc1_config_channel_atten(ADC1_CHANNEL_4, ADC_ATTEN_DB_11);
+    adc1_config_channel_atten(ADC1_CHANNEL_7, ADC_ATTEN_DB_11);
 
     while (1) 
     {
-        int adc_value = adc1_get_raw(ADC1_CHANNEL_4);
-        float adc_value_voltage = esp_adc_cal_raw_to_voltage(adc1_get_raw(ADC1_CHANNEL_4), &adc1_chars);
+        int adc_value = adc1_get_raw(ADC1_CHANNEL_7);
+        float adc_value_voltage = esp_adc_cal_raw_to_voltage(adc1_get_raw(ADC1_CHANNEL_7), &adc1_chars);
         //float corrente = adc_value_voltage / 193;
         printf("Valor ADC: %d", adc_value); 
         printf("\n");
